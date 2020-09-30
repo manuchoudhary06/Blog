@@ -1,5 +1,5 @@
 # Blog
-A node JS blog site that lets you add your blog posts.
+A node JS blog site that lets you add your blog posts. the project is still in development phase we're adding Database to the project.
 
 
 #How to Run this Project
