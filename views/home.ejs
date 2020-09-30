@@ -1,0 +1,22 @@
+<%- include('partials/header.ejs'); -%>
+
+<main role="main" class="container">
+  <h1 class="mt-5">Home</h1>
+  <p class="lead text-justify">
+    <%= homecontent %>
+  </p>
+
+  <% posts.forEach(function (post) { %>
+  <h3><%= post.title %></h3>
+  <p>
+    <%= post.text.substring(0,100) + " ..." %><a
+      href="/posts/<%= post.title %>"
+    >
+      Read More</a
+    >
+  </p>
+
+  <% }) %>
+</main>
+
+<%- include('partials/footer'); -%>
